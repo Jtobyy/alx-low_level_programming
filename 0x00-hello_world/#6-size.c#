@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+
+int main(void)
+{
+  printf("Size of a char: %d byte(s) \n", sizeof);  
+  printf("Size of a char: %d byte(s) \n");
+  printf("Size of a char: %d byte(s) \n");  
+  printf("Size of a char: %d byte(s) \n");  
+  printf("Size of a char: %d byte(s) \n");
+  
+  return 0;
+}

@@ -8,12 +8,14 @@
 
 int main(void)
 {
-for (int i = 97; i < 123; i++)
+int i;
+int j;
+for (i = 97; i < 123; i++)
 {
 char x = i;
 putchar(x);
 }
-for (int i = 65; i < 91; i++)
+for (j = 65; i < 91; i++)
 {
 char x = i;
 putchar(x);

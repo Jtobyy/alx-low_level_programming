@@ -15,9 +15,9 @@ for (i = 97; i < 123; i++)
 char x = i;
 putchar(x);
 }
-for (j = 65; i < 91; i++)
+for (j = 65; j < 91; j++)
 {
-char x = i;
+char x = j;
 putchar(x);
 }
 

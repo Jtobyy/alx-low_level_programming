@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 /**
  * main - prints system specs
  * Return: 0
@@ -11,4 +12,15 @@ printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
 printf("Size of a long long int: %ld byte(s)\n", sizeof(long long int));
 printf("Size of a float: %ld byte(s)\n", sizeof(float));
 return (0);
+=======
+
+/**
+ * main - use stderr through fwrite
+ * Return: 0
+*/
+int main(void)
+{
+  fwrite("\"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 55, 1, stderr);
+return (1);
+>>>>>>> 121a8e70903301b5b7d2419207a55456e361ff9f
 }

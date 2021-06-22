@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *main: prints Holberton followed by a new line
- *Return - 1
+ *main- prints Holberton followed by a new line
+ *Return: 1
  */
-
 int main(void)
 {
 putchar('H');
@@ -17,5 +16,5 @@ putchar('t');
 putchar('o');
 putchar('n');
 putchar('\n');
-return 0;
+return (0);
 }

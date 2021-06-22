@@ -1,0 +1,1 @@
+Functions and nested loops without the use of standard libary<stdlib>

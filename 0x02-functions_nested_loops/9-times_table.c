@@ -19,14 +19,22 @@ return (0);
  */
 void times_table(void)
 {
-int h;
 int i;
 int j;
 int k;
-for (h = 0; h < 10; h++)
-{
+int val = 0;
 for (i = 0; i < 10; i++)
 {
+  if (i == 0)
+    {
+      for (j = 0; j < 0; J++)
+	{
+	  putchar('0' + '0')
+	    }
+    }
+for (k = 0; k <= i*9; k+i)
+{
+  val += j;
 }
 }
 }

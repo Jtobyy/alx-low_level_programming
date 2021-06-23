@@ -1,18 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
 
-void print_alphabet(void);
-
-/**
- *main - prints Holberton followed by a new line
- *Return: 1
- */
-
-int main(void)
-{
-return (0);
-}
-
 /**
  *print_alphabet - a function that prints the alphabet, in lowercase,
  * followed by a new line.void print_alphabet(void)

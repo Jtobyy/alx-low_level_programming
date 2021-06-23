@@ -1,27 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
 
-int _abs(int n);
-
-/**
- *main- cals _abs
- *Return: 0
- */
-
-int main(void)
-{
-int r;
-r = _abs(-1);
-printf("%d\n", r);
-r = _abs(0);
-printf("%d\n", r);
-r = _abs(1);
-printf("%d\n", r);
-r = _abs(-98);
-printf("%d\n", r);
-return (0);
-}
-
 /**
  *_abs - computes the absolute value of an integer
  *@n: integer whose absolute value is to be determined

@@ -1,19 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
 
-void jack_bauer(void);
-
-/**
- *main - calls the only function at the bottom...
- *Return: 0
- */
-
-int main(void)
-{
-jack_bauer();
-return (0);
-}
-
 /**
  *jack_bauer - prints every minute of the day of Jack Bauer,
  *starting from 00:00 to 23:59

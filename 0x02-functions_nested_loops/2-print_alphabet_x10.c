@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- *print_alphabet - a function that prints the alphabet, in lowercase,
+ *print_alphabet_x10 - a function that prints the alphabet, in lowercase,
  * followed by a new line.void print_alphabet(void)
  *Return: void
  */

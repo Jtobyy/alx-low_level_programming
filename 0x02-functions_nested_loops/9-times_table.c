@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 
 void times_table(void);
 
@@ -21,21 +22,44 @@ void times_table(void)
 {
 int i;
 int j;
-int k;
-int val = 0;
+int k = 0;
 for (i = 0; i < 10; i++)
 {
-  if (i == 0)
-    {
-      for (j = 0; j < 0; J++)
-	{
-	  putchar('0' + '0')
-	    }
-    }
-for (k = 0; k <= i*9; k+i)
+if (i == 0)
 {
-  val += j;
+for (j = 0; j < 10; j++)
+{
+_putchar('0');
+_putchar(',');
+_putchar('.');
+_putchar('.');
+}   
 }
+if (i == 1)
+{
+for (j = 0; j < 10; j++)
+{
+_putchar(k + '0');
+_putchar(',');
+_putchar('.');
+_putchar('.');
+k += i;
+}
+k = 0;
+}
+if (i == 2)
+{
+for (j = 0; j < 10; j++)
+{
+_putchar(k + '0');
+_putchar(',');
+_putchar('.');
+_putchar('.');
+k += i;
+}
+k = 0;
+}
+putchar('\n');
 }
 }
 

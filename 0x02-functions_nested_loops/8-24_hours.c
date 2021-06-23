@@ -4,8 +4,8 @@
 void jack_bauer(void);
 
 /**
- *main: calls the only function at the bottom...
- *Return - 0
+ *main - calls the only function at the bottom...
+ *Return: 0
  */
 
 int main(void)
@@ -15,9 +15,9 @@ return (0);
 }
 
 /**
- *jack_bauer: prints every minute of the day of Jack Bauer,
+ *jack_bauer - prints every minute of the day of Jack Bauer,
  *starting from 00:00 to 23:59
- *Return - value of last digit
+ *Return: value of last digit
  */
 void jack_bauer(void)
 {

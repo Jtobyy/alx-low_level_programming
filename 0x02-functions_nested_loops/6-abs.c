@@ -4,8 +4,8 @@
 int _abs(int n);
 
 /**
- *main: cals _abs
- *Return - 0
+ *main- cals _abs
+ *Return: 0
  */
 
 int main(void)
@@ -23,18 +23,19 @@ return (0);
 }
 
 /**
- *_islower: computes the absoluet value of an integer
- *Return - 1, 0 or -1
+ *_abs - computes the absolute value of an integer
+ *@n: integer whose absolute value is to be determined
+ *Return: 1, 0 or -1
  */
 int _abs(int n)
 {
 if (n >= 0)
 {
-return n;
+return (n);
 }
 else if (n < 0)
 {
 n = 0 - n;
-return n;
+return (n);
 }
 }

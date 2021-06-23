@@ -4,8 +4,8 @@
 int print_last_digit(int n);
 
 /**
- *main: calls print_last...
- *Return - 0
+ *main - calls print_last...
+ *Return: 0
  */
 
 int main(void)
@@ -20,8 +20,9 @@ return (0);
 }
 
 /**
- *_islower: returns the value of last digit
- *Return - value of last digit
+ *print_last_digit - returns the value of last digit
+ *@n: given series of digits
+ *Return: value of last digit
  */
 int print_last_digit(int n)
 {
@@ -31,6 +32,6 @@ n = 0 - n;
 }
 int tmp = n % 10;
 putchar(tmp + '0');
-return tmp;
+return (tmp);
 }
 

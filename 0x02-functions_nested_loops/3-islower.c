@@ -4,8 +4,8 @@
 int _islower(int c);
 
 /**
- *main: calls _islower
- *Return - 0
+ *main - calls _islower
+ *Return: 0
  */
 
 int main(void)
@@ -22,14 +22,15 @@ return (0);
 }
 
 /**
- *_islower: checks if a letter is in lowercase
- *Return - 1 or 0
+ *_islower- checks if a letter is in lowercase
+ *@c: character to be checked
+ *Return: 1 or 0
  */
 int _islower(int c)
 {
 if (c >= 97 && c <= 122)
 {
-return 1;
+return (1);
 }
-return 0;
+return (0);
 }

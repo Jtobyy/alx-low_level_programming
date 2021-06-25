@@ -18,7 +18,7 @@ if (month >= 2 && day >= 60)
 {
 if (month == 2 && day == 60)
 {
-continue;
+day = day;
 }
 else
 {

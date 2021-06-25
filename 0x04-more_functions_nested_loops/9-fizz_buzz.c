@@ -44,6 +44,8 @@ else
 {
 putchar(i + '0');
 }
+if (i < 100)
+{
 putchar(' ');
 }
 putchar('\n');

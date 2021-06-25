@@ -24,6 +24,8 @@ int main(void)
   /**  printf("%d\n", mul(98, 1024));
    *  printf("%d\n", mul(-402, 4096));
    *  return (0); */
-  print_numbers();
+  /**  print_numbers();
+   *  return (0); */
+  print_most_numbers();
   return (0);
 }

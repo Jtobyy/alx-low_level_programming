@@ -26,6 +26,8 @@ int main(void)
    *  return (0); */
   /**  print_numbers();
    *  return (0); */
-  print_most_numbers();
+  /**  print_most_numbers();
+   *       return (0); */
+  more_numbers();
   return (0);
 }

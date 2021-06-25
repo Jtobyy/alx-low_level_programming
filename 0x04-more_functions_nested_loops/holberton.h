@@ -16,5 +16,6 @@ void print_square(int size);
 void fizzbuzz(char x);
 void g_putchar(int y, char x);
 void print_triangle(int size);
+void un_ryputchar(int x, char c);
 
 #endif /* HOLBERTON_H */

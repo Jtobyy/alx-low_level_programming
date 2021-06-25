@@ -12,18 +12,12 @@ for (x = 0; x < 10; x++)
 {
 for (i = 0; i <= 14; i++)
 {
-if (i <= 9)
-{
-putchar(i + '0');
-continue;
-}
-else if (i > 9)
-{
 int t = i % 10;
+if (i > 9)
+{
 putchar(1 + '0');
-putchar(t + '0');
-continue;
 }
+putchar(t + '0');
 }
 putchar('\n');
 }

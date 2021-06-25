@@ -28,6 +28,11 @@ int main(void)
    *  return (0); */
   /**  print_most_numbers();
    *       return (0); */
-  more_numbers();
+  /**  more_numbers();
+       return (0);*/
+  print_line(0);
+  print_line(2);
+  print_line(10);
+  print_line(-4);
   return (0);
 }

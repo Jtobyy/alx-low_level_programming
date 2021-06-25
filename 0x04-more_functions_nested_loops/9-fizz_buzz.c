@@ -41,12 +41,11 @@ g_putchar(t, 'i');
 else if (i == 100)
 g_putchar(t, 'j');
 else
-{
 putchar(i + '0');
-}
 if (i < 100)
 {
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);

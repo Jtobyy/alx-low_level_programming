@@ -1,17 +1,20 @@
 #include "holberton.h"
 
 /**
- * main -  a program that prints the numbers from 1 to 100,
- *followed by a new line. But for multiples of three print Fizz
- *instead of the number and for the multiples of five print Buzz.
- *For numb.
- * Return: 0
- */
+* main -  a program that prints the numbers from 1 to 100,
+*followed by a new line. But for multiples of three print Fizz
+*instead of the number and for the multiples of five print Buzz.
+*For numb.
+* Return: 0
+*/
+
 int main(void)
 {
 int i;
+int t;
 for (i = 1; i <= 100; i++)
 {
+t = i % 10;
 if (i % 3 == 0 && i % 5 != 0)
 {
 fizzbuzz('f');
@@ -27,53 +30,45 @@ if (i % 3 == 0 && i % 5 == 0)
 fizzbuzz('a');
 continue;
 }
-
- 
 if (i >= 10 && i < 20)
 {
-  int t = i % 10;
-  g_putchar(t, 'a');
- }
+g_putchar(t, 'a');
+}
 else if (i >= 20 && i < 30)
 {
-   int t = i % 10;
-   g_putchar(t, 'b'); 
+g_putchar(t, 'b');
 }
 else if (i >= 30 && i < 40)
 {
-   int t = i % 10;
-   g_putchar(t, 'c');
- }
+g_putchar(t, 'c');
+}
 else if (i >= 40 && i < 50)
 {
-   int t = i % 10;
-   g_putchar(t, 'd');
- }
+g_putchar(t, 'd');
+}
 else if (i >= 50 && i < 60)
 {
-   int t = i % 10;
-   g_putchar(t, 'e');
- }
+g_putchar(t, 'e');
+}
 else if (i >= 60 && i < 70)
 {
-   int t = i % 10;
-   g_putchar(t, 'f');
- }
+g_putchar(t, 'f');
+}
 else if (i >= 70 && i < 80)
 {
-  g_putchar(t, 'g');
- }
+g_putchar(t, 'g');
+}
 else if (i >= 80 && i < 90)
 {
-  g_putchar(t, 'h');
- }
+g_putchar(t, 'h');
+}
 else if (i >= 90 && i < 100)
 {
-  g_putchar(t, 'i');
+g_putchar(t, 'i');
 }
 else if (i == 100)
 {
-  g_putchar(t, 'j');
+g_putchar(t, 'j');
 }
 else
 {
@@ -131,58 +126,50 @@ return;
  */
 void g_putchar(int y, char x)
 {
-  switch(x)
-    {
-    case 'a':
-
-      putchar(1 + '0');
+int t = y;
+switch (x)
+{
+case 'a':
+putchar(1 + '0');
 putchar(t + '0');
- break;
-    case 'b':
- int t = i % 10;
+break;
+case 'b':
 putchar(2 + '0');
 putchar(t + '0');
- break;
-    case 'c':
-int t = i % 10;
+break;
+case 'c':
 putchar(3 + '0');
 putchar(t + '0');
- break;
-    case 'd':
-int t = i % 10;
+break;
+case 'd':
 putchar(4 + '0');
 putchar(t + '0');
- break;
-    case 'e':
-int t = i % 10;
+break;
+case 'e':
 putchar(5 + '0');
 putchar(t + '0');
- break;
-    case 'f':
-int t = i % 10;
+break;
+case 'f':
 putchar(6 + '0');
 putchar(t + '0');
- break;
-    case 'g':
-int t = i % 10;
+break;
+case 'g':
 putchar(7 + '0');
 putchar(t + '0');
- break;
-    case 'h':
-int t = i % 10;
+break;
+case 'h':
 putchar(8 + '0');
 putchar(t + '0');
-break
-    case 'i':
-int t = i % 10;
+break;
+case 'i':
 putchar(9 + '0');
 putchar(t + '0');
- break;
-    case 'j':
+break;
+case 'j':
 putchar(1);
 putchar(0);
 putchar(0);
- break;
-    }
-
-  
+break;
+}
+return;
+}

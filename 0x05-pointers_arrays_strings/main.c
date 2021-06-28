@@ -20,11 +20,17 @@ int main(void)
   printf("a=%d, b=%d\n", a, b);
   return (0); */
 
-  char *str;
+  /**  char *str;
   int len;
 
   str = "Holberton!";
   len = _strlen(str);
   printf("%d\n", len);
+  return (0); */
+
+  char *str;
+
+  str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+  _puts(str);
   return (0);
 }

@@ -15,15 +15,18 @@ while (*(s + i) != 0)
 {
 i++;
 }
-j = i - 1;
-while (&*(s + j) != &*s)
+if (i > 1)
 {
+j = i - 1;
+do {
 c = *(s + j);
 putchar(c);
 j--;
-}
+} while (&*(s + j) != &*s);
 c = *s;
 putchar(c);
+}
 putchar('\n');
 return;
 }
+

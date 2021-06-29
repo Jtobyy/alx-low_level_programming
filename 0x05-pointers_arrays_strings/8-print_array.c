@@ -14,7 +14,7 @@ i = 0;
 while (i < n)
 {
 tmp = *(a + i);
-printf("%d", tmp); 
+printf("%d", tmp);
 if (i != (n - 1))
 printf(", ");
 i++;

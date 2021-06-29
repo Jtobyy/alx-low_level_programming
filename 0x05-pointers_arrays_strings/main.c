@@ -39,13 +39,13 @@ int main(void)
   rev_string(s);
   printf("%s\n", s);
   return (0);*/
-  /**  char *str;
-
-    str = "0123456789";
-    puts2(str);
-    return (0); */
-
   char *str;
+
+    str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    puts2(str);
+    return (0);
+
+  /**  char *str;
   char *str2;
 
   str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -53,7 +53,7 @@ int main(void)
   puts_half(str);
   putchar('\n');
   puts_half(str2);
-  return (0);
+  return (0);*/
   /**  int array[5];
 
   array[0] = 98;

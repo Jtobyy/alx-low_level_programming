@@ -16,6 +16,7 @@ tmp = *(str + i);
 putchar(tmp);
 i += 2;
 }
+putchar('\0');
 putchar('\n');
 return;
 }

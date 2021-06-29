@@ -28,11 +28,11 @@ int main(void)
   printf("%d\n", len);
   return (0); */
 
-  char *str;
+  /**  char *str;
 
   str = "Holberton!";
   print_rev(str);
-  return (0);
+  return (0); */
   /**  char s[446] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   printf("%s\n", s);
@@ -70,4 +70,24 @@ int main(void)
   printf("%s", s1);
   printf("%s", ptr);
   return (0); */
+
+  int nb;
+
+  nb = _atoi("98");
+  printf("%d\n", nb);
+  nb = _atoi("-402");
+  printf("%d\n", nb);
+  nb = _atoi("          ------++++++-----+++++--98");
+  printf("%d\n", nb);
+  nb = _atoi("214748364");
+  printf("%d\n", nb);
+  nb = _atoi("0");
+  printf("%d\n", nb);
+  nb = _atoi("Suite 402");
+  printf("%d\n", nb);
+  nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+  printf("%d\n", nb);
+  nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+  printf("%d\n", nb);
+  return (0);
 }

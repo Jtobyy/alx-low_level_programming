@@ -24,8 +24,6 @@ putchar(tmp);
 i += 2;
 } while (*(str + i) != 0 && *(str + (i - 1)) != 0);
 }
-else
-putchar(*(str + i));
 putchar('\n');
 return;
 }

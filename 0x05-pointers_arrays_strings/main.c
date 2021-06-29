@@ -28,15 +28,20 @@ int main(void)
   printf("%d\n", len);
   return (0); */
 
-  char *str;
+  /**  char *str;
 
   str = "Holberton!";
   print_rev(str);
-  return (0);
-  /*  char s[10] = "Holberton";
+  return (0);*/
+  /**  char s[10] = "Holberton";
 
   printf("%s\n", s);
   rev_string(s);
   printf("%s\n", s);
   return (0);*/
+  char *str;
+
+    str = "0123456789";
+    puts2(str);
+    return (0);
 }

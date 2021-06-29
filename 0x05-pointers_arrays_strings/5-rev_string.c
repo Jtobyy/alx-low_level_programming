@@ -12,7 +12,7 @@ int i;
 int j;
 int k;
 char tmp;
-char rev[255];
+char rev[1000];
 j = 0;
 k = 0;
 while (*(s + j) != 0)

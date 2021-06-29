@@ -33,7 +33,7 @@ int main(void)
   str = "Holberton!";
   print_rev(str);
   return (0);*/
-  char s[10] = "Holberton";
+  char s[446] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   printf("%s\n", s);
   rev_string(s);

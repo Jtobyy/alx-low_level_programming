@@ -33,17 +33,17 @@ int main(void)
   str = "Holberton!";
   print_rev(str);
   return (0);*/
-  /**  char s[10] = "Holberton";
+  char s[10] = "Holberton";
 
   printf("%s\n", s);
   rev_string(s);
   printf("%s\n", s);
-  return (0);*/
-  char *str;
+  return (0);
+  /**  char *str;
 
-    str = "";
+    str = "0123456789";
     puts2(str);
-    return (0);
+    return (0); */
 
   /**  char *str;
   char *str2;

@@ -18,5 +18,6 @@ tmp = *(src + i);
 *(dest + i) = tmp;
 i++;
 }
+*(dest + (i + 1)) = '\0';
 return (dest);
 }

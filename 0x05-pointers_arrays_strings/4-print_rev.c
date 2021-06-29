@@ -8,19 +8,25 @@
 void print_rev(char *s)
 {
 int i;
+int j;
 char c;
 i = 0;
 while (*(s + i) != 0)
 {
 i++;
 }
-while (&*(s + i) != &*s)
+if (i > 1)
 {
-c = *(s + i);
+j = i - 1;
+do {
+c = *(s + j);
 putchar(c);
-i--;
-}
+j--;
+} while (&*(s + j) != &*s);
 c = *s;
 putchar(c);
+}
+putchar('\n');
 return;
 }
+

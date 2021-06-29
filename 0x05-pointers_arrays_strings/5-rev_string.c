@@ -9,54 +9,29 @@
 void rev_string(char *s)
 {
 int i;
-int r;
+int j;
+int k;
 char tmp;
-char rev[255];
-
-i = 0;
-r = 0;
-while (*(s + i) != 0)
+char rev[1000];
+j = 0;
+k = 0;
+while (*(s + j) != 0)
 {
-i++;
+j++;
 }
-printf("r:%d rev:%p s:%p *s:%c \n", r, rev, s, *s);
-printf("checkpoint 2\n");
-while ( i >= 0)
+i = j - 1;
+while (i >= 0)
 {
 tmp = *(s + i);
-printf("value of tmp is: %c ", tmp);
-printf("checkpoint 3 ");
-rev[r] = tmp;
-printf("rev + r: %c\n" , rev[r]);
 i--;
-r++;
- printf("rev: %c", rev[0]);
+rev[k] = tmp;
+k++;
 }
- s = rev;
- printf("s: %s", s);
- printf("rev: %c", *rev);
- printf("rev: %p ", rev);
- printf("s: %p, ", s);
-
-
-
-/**
-  printf("checkpoint 5");
-printf("value in reverse is : %s", rev);
-   printf("checkpoint 6");
-   putchar('\n'); */
-   return;
+rev[k] = '\0';
+for (i = 0; i < j; i++)
+{
+*(s + i) = rev[i];
 }
- /**
-printf("value of i is: %d\n", i);
-*  printf("value stored at (r-1)th place is %c\n", *(s + 9));
-* printf("address of s is %p\n", (void *)&s);
-* printf("value of just s without the ampersand %p\n", s);
-*   printf("address of *s is %p\n", (void *)&(*(s)));
-* printf("address of *(s+0) is %p\n", (void *)&(*(s+0)));
-* printf("address of *(s+r) is %p\n", (void *)&(*(s+r)));
-*   printf("address of *(s+r) is %p\n", (void *)&(*(s+2)));
-* rev = s;
-* printf("value of rev is: %p\n", rev);
-* printf("the address of rev is: %p\n", (void *)&(*rev));
-*/
+s = rev;
+return;
+}

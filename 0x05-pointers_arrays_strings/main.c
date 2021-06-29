@@ -30,7 +30,7 @@ int main(void)
 
   char *str;
 
-  str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+  str = "Holberton!";
   print_rev(str);
   return (0);
   /*  char s[10] = "Holberton";

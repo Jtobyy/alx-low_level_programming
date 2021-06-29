@@ -14,14 +14,13 @@ while (*(s + i) != 0)
 {
 i++;
 }
-while ((s + i) != s)
+while (&*(s + i) != &*s)
 {
 c = *(s + i);
 putchar(c);
 i--;
 }
-c = *(s + i);
+c = *s;
 putchar(c);
-putchar('\n');
 return;
 }

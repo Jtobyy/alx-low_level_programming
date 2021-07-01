@@ -76,10 +76,10 @@ char str[] = "Holberton School!\n";
   printf("%s", str);
   return (0); */
   
-  char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+  char str[] = "emdo dofda f/afjosf/af afdsoif.s fsodifjd, aifdosf /t iodofjsf\todsijf sodfi\n";
   char *ptr;
 
-  ptr = leet(str);
+  ptr = cap_string(str);
   printf("%s", ptr);
   printf("%s", str);
   return (0);

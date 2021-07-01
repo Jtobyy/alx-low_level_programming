@@ -6,7 +6,7 @@
  */
 int main (void)
 {
-  /**  char s1[98] = "Hello ";
+  char s1[98] = "Hello ";
   char s2[] = "World!\n";
   char *ptr;
 
@@ -20,7 +20,7 @@ int main (void)
   printf("%s", s1);
   printf("%s", s2);
   printf("%s", ptr);
-  */
+  return 0;
 
   /**  char s1[98];
   char *ptr;
@@ -73,13 +73,13 @@ int main (void)
   printf("%s", ptr);
   printf("%s", str);
   return (0); */
-  char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+  /**  char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
   char *ptr;
 
   ptr = leet(str);
   printf("%s", ptr);
   printf("%s", str);
-  return (0);
+  return (0); */
 }
 
 void print_array(int *a, int n)

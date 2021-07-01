@@ -6,7 +6,7 @@
  */
 int main (void)
 {
-  char s1[98] = "Hello ";
+  /**  char s1[98] = "Hello ";
   char s2[] = "World!\n";
   char *ptr;
 
@@ -20,7 +20,7 @@ int main (void)
   printf("%s", s1);
   printf("%s", s2);
   printf("%s", ptr);
-  return 0;
+  return 0; */
 
   /**  char s1[98];
   char *ptr;
@@ -53,13 +53,15 @@ int main (void)
   printf("\n");
   return (0); 
   */
-  /**  char s1[] = "Hello";
-  char s2[] = "World!";
+  
+  char s1[] = "World!";
+  char s2[] = "Hello";
 
   printf("%d\n", _strcmp(s1, s2));
   printf("%d\n", _strcmp(s2, s1));
   printf("%d\n", _strcmp(s1, s1));
-  return (0); */
+  return (0);
+  
   /**  int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
 
   print_array(a, sizeof(a) / sizeof(int));

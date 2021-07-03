@@ -76,12 +76,41 @@ char str[] = "Holberton School!\n";
   printf("%s", str);
   return (0); */
   
-  char str[] = "emdo dofda f/afjosf/af afdsoif.s fsodifjd, aifdosf /t iodofjsf\todsijf sodfi\n";
+  /**  char str[] = "emdo dofda f/afjosf/af afdsoif.s fsodifjd, aifdosf /t iodofjsf\todsijf sodfi\n";
   char *ptr;
 
   ptr = cap_string(str);
   printf("%s", ptr);
   printf("%s", str);
+  return (0); */
+  /**  char s[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
+  char *p;
+
+  p = rot13(s);
+  printf("%s", p);
+  printf("------------------------------------\n");
+  printf("%s", s);
+  printf("------------------------------------\n");
+  p = rot13(s);
+  printf("%s", p);
+  printf("------------------------------------\n");
+  printf("%s", s);
+  printf("------------------------------------\n");
+  p = rot13(s);
+  printf("%s", p);
+  printf("------------------------------------\n");
+  printf("%s", s);
+  return (0); */
+  /**  print_number(98);
+       putchar('\n');*/
+  print_number(402);
+  putchar('\n');
+  /**print_number(1024);
+  putchar('\n');
+  print_number(0);
+  putchar('\n');
+  print_number(-98);
+  putchar('\n');*/
   return (0);
 }
 /**

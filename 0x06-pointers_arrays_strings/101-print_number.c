@@ -19,7 +19,7 @@ print_number(n);
 }
 while (quo >= 10)
 {
-    quo = n / 10;
+    quo = quo / 10;
     printf("quo at this while: %d\", quo);
     i++;
 } 

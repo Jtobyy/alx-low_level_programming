@@ -12,7 +12,7 @@ int main(void)
   printf("-------------------------------------------------\n");
   simple_print_buffer(buffer, 98);
   return (0); */
-  char *s = "hello";
+  /**  char *s = "hello";
   char *f;
 
   f = _strchr(s, 'l');
@@ -21,6 +21,13 @@ int main(void)
     {
       printf("%s\n", f);
     }
+    return (0);*/
+  char *s = "hello, world";
+  char *f = "oleh";
+  unsigned int n;
+
+  n = _strspn(s, f);
+  printf("%u\n", n);
   return (0);
 }
 

@@ -1,12 +1,17 @@
 #include "holberton.h"
 
 /**
+<<<<<<< HEAD
+=======
  * puts_half - prints half of a string
+>>>>>>> 578771a91115aa830171d420e3d43d3ddf9e2263
  *@str: string
  *Return: void
  */
 void puts_half(char *str)
 {
+<<<<<<< HEAD
+=======
 int i;
 int n;
 int j;
@@ -28,4 +33,5 @@ n++;
 }
 putchar('\n');
 return;
+>>>>>>> 578771a91115aa830171d420e3d43d3ddf9e2263
 }

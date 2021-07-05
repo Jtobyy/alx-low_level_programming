@@ -1,24 +1,27 @@
 #include "holberton.h"
 
+int _pow10(int);
+void add_zeros(int n, int p);
+
 /**
  *print_number - prints an integer
  *@n: number to be printed
  *Return: void
  */
-int _pow10(int);
 
 void print_number(int n)
 {
 int quo;
-int rem;
 int i;
-int j;
 int p;
-int m;
+<<<<<<< HEAD
 
+
+=======
+ 
+>>>>>>> a4b7bdaf0f798dc03a7516066ce74bfa0f9e29e5
 i = 0;
 quo = n;
-rem = n % 10;
 if (n < 0)
 {
 putchar('-');
@@ -35,35 +38,20 @@ putchar(quo + '0');
 p = _pow10(i);
 n = (n - (quo * p));
 
+add_zeros(n, p);
 
- if ((P / 10) > n)
-  {
-    m = p - n;
-{
-for (j = 0; j < i; j++)
-putchar('0');
-return;
-}
-else
-{
-for (j = 1; j < i; j++)
-putchar('0');
-putchar(n + '0');
-return;
-}
-
-  }
 if (n >= 10)
 print_number(n);
 else
 {
-
+  putchar(n + '0');
 {
-}
 }
 
   /**
    *_pow - calculates the value of 10 raised to an integer
+   *@n: value of power
+   *Return: void
    */
 int _pow10(int n)
 {
@@ -76,3 +64,20 @@ tmp *= 10;
 }
 return (tmp);
 }
+
+/**
+ *add_zeros - adds appropratite amount of zeros before digits
+ *@n: integer that zeros should be added before
+ *@p: Power of MSD of initial integer
+ *Return: void
+ */
+
+ void add_zeros(int n, int p)
+ {
+   int i;
+   for (i = p / 10; i > 1 && n < i; i / 10)
+     {
+       putchar(0 + '0');
+     }
+   return;
+ }

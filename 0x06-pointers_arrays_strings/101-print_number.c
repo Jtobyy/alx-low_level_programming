@@ -15,7 +15,7 @@ int i;
 int j;
 int p;
 int m;
-int n;
+
 i = 0;
 quo = n;
 rem = n % 10;
@@ -28,10 +28,6 @@ print_number(n);
 while (quo >= 10)
 {
     quo = quo / 10;
-<<<<<<< HEAD
-
-=======
->>>>>>> 8867c7e6e36edd7ac5242d01d560719a2fef6761
     i++;
 }
  

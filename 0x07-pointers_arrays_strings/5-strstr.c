@@ -24,7 +24,7 @@ for (i = 0; i <= k; i++)
 if (haystack[i] == needle[0])
 {
 p = &(haystack[i]);
-for (j = 0; j < m; j++)
+for (j = 0; j <= m; j++)
 {
 if (haystack[i + j] != needle[j])
 break;

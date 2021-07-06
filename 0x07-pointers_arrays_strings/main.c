@@ -12,16 +12,16 @@ int main(void)
   printf("-------------------------------------------------\n");
   simple_print_buffer(buffer, 98);
   return (0); */
-  /**  char *s = "hello";
+  char *s = "hello";
   char *f;
 
   f = _strchr(s, 'j');
 
-  if (f != NULL)
+  if (f == NULL)
     {
-      printf("%s\n", f);
+      printf("%s\n", "f");
     }
-    return (0); */
+    return (0);
   /**  char *s = "hello, world";
   char *f = "oleh";
   unsigned int n;
@@ -55,7 +55,7 @@ int main(void)
   };
   print_chessboard(board);
   return (0); */
-  int c3[3][3] = {
+  /**int c3[3][3] = {
 		  {0, 1, 5},
 		  {10, 11, 12},
 		  {1000, 101, 102},
@@ -69,7 +69,7 @@ int main(void)
   };
   print_diagsums((int *)c3, 3);
   print_diagsums((int *)c5, 5);
-  return (0);
+  return (0); */
 }
 
 

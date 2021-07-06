@@ -12,23 +12,23 @@ int main(void)
   printf("-------------------------------------------------\n");
   simple_print_buffer(buffer, 98);
   return (0); */
-  char *s = "hello, world";
+  /**  char *s = "hello";
   char *f;
 
-  f = _strchr(s, '7');
+  f = _strchr(s, 'j');
 
   if (f != NULL)
     {
       printf("%s\n", f);
     }
-    return (0);
-  /**  char *s = "hello, world";
-  char *f = "oleh";
+    return (0); */
+  char *s = "hello, world";
+  char *f = "o,";
   unsigned int n;
 
   n = _strspn(s, f);
   printf("%u\n", n);
-  return (0); */
+  return (0);
   /**  char *s = "hello, world";
   char *f = "world";
   char *t;
@@ -69,7 +69,7 @@ int main(void)
   };
   print_diagsums((int *)c3, 3);
   print_diagsums((int *)c5, 5);
-  return (0); */
+  return (0);*/
 }
 
 

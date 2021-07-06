@@ -22,20 +22,20 @@ int main(void)
       printf("%s\n", f);
     }
     return (0); */
-  char *s = "hello, world";
+  /**  char *s = "hello, world";
   char *f = "o,";
   unsigned int n;
 
   n = _strspn(s, f);
   printf("%u\n", n);
-  return (0);
-  /**  char *s = "hello, world";
-  char *f = "world";
+  return (0); */
+  char *s = "hello, world";
+  char *f = "\0";
   char *t;
 
   t = _strpbrk(s, f);
   printf("%s\n", t);
-  return (0);*/
+  return (0);
   /**  char *s = "hello, world";
   char *f = "pp";
   char *t;

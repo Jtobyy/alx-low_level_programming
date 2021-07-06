@@ -12,16 +12,16 @@ int main(void)
   printf("-------------------------------------------------\n");
   simple_print_buffer(buffer, 98);
   return (0); */
-  /**  char *s = "hello";
+  char *s = "hello";
   char *f;
 
-  f = _strchr(s, 'l');
+  f = _strchr(s, 'j');
 
   if (f != NULL)
     {
       printf("%s\n", f);
     }
-    return (0);*/
+    return (0);
   /**  char *s = "hello, world";
   char *f = "oleh";
   unsigned int n;
@@ -36,13 +36,13 @@ int main(void)
   t = _strpbrk(s, f);
   printf("%s\n", t);
   return (0);*/
-  char *s = "hello, world";
+  /**  char *s = "hello, world";
   char *f = "pp";
   char *t;
 
   t = _strstr(s, f);
   printf("%s\n", t);
-  return (0);
+  return (0); */
 }
 
 

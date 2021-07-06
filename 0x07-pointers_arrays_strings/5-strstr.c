@@ -25,5 +25,5 @@ return (p);
 }
 }
 }
-return ("NULL");
+return ("0");
 }

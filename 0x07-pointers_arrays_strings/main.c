@@ -12,14 +12,14 @@ int main(void)
   printf("-------------------------------------------------\n");
   simple_print_buffer(buffer, 98);
   return (0); */
-  char *s = "hello";
+  char *s = "hello, world";
   char *f;
 
-  f = _strchr(s, 'j');
+  f = _strchr(s, '7');
 
-  if (f == NULL)
+  if (f != NULL)
     {
-      printf("%s\n", "f");
+      printf("%s\n", f);
     }
     return (0);
   /**  char *s = "hello, world";

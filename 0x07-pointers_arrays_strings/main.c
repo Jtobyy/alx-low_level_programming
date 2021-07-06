@@ -29,20 +29,20 @@ int main(void)
   n = _strspn(s, f);
   printf("%u\n", n);
   return (0); */
-  char *s = "hello, world";
+  /**  char *s = "hello, world";
   char *f = "\0";
   char *t;
 
   t = _strpbrk(s, f);
   printf("%s\n", t);
-  return (0);
-  /**  char *s = "hello, world";
-  char *f = "pp";
+  return (0);*/
+  char *s = "hello, world";
+  char *f = "worl";
   char *t;
 
   t = _strstr(s, f);
   printf("%s\n", t);
-  return (0); */
+  return (0); 
   /**  char board[8][8] = {
 		      {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
 		      {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},

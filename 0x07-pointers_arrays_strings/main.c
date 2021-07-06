@@ -37,7 +37,7 @@ int main(void)
   printf("%s\n", t);
   return (0);*/
   char *s = "hello, world";
-  char *f = "worl";
+  char *f = "u";
   char *t;
 
   t = _strstr(s, f);

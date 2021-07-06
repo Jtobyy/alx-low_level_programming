@@ -12,7 +12,7 @@ int main(void)
   printf("-------------------------------------------------\n");
   simple_print_buffer(buffer, 98);
   return (0); */
-  char *s = "hello";
+  /**  char *s = "hello";
   char *f;
 
   f = _strchr(s, 'j');
@@ -21,7 +21,7 @@ int main(void)
     {
       printf("%s\n", f);
     }
-    return (0);
+    return (0); */
   /**  char *s = "hello, world";
   char *f = "oleh";
   unsigned int n;
@@ -43,6 +43,18 @@ int main(void)
   t = _strstr(s, f);
   printf("%s\n", t);
   return (0); */
+  char board[8][8] = {
+		      {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+		      {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+		      {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		      {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		      {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		      {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		      {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+		      {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+  };
+  print_chessboard(board);
+  return (0);
 }
 
 

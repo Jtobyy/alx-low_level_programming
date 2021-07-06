@@ -1,27 +1,23 @@
 #include "holberton.h"
 
 /**
- *_print_chessboard - prints the chessboard
- *@a: pointer to string
+ *print_chessboard - prints the chessboard
+ *@a: pointer
  *Return: void
  */
 void print_chessboard(char (*a)[8])
 {
 int i;
 int j;
-char *p = NULL;
-for (i = 0; haystack[i] != '\0'; i++)
+int k;
+for (i = 0; i < 8; i++)
 {
-if (haystack[i] == needle[0])
+for (j = 0; j < 8; j++)
 {
-p = &(haystack[i]);
-for (j = 0; needle[j] != '\0'; j++)
-{
-if (haystack[i + j] != needle[j])
-break;
-return (p);
+k = a[i][j];
+putchar(k);
 }
+putchar('\n');
 }
-}
-return ("null");
+return;
 }

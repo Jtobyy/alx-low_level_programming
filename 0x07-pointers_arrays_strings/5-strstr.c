@@ -27,7 +27,10 @@ p = &(haystack[i]);
 for (j = 0; j <= m; j++)
 {
 if (haystack[i + j] != needle[j])
+  {
 break;
+  }
+if (j == m)
 return (p);
 }
 }

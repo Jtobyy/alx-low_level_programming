@@ -35,6 +35,7 @@ int n;
   printf("%d\n", r);
   return (0);
   */
+  /**
   int r;
 
   r = _pow_recursion(1, 10);
@@ -48,6 +49,22 @@ int n;
   r = _pow_recursion(5, -2);
   printf("%d\n", r);
   r = _pow_recursion(-5, 3);
+  printf("%d\n", r);
+  return (0);
+  */
+  int r;
+
+  r = _sqrt_recursion(161);
+  printf("%d\n", r);
+  r = _sqrt_recursion(144);
+  printf("%d\n", r);
+  r = _sqrt_recursion(201);
+  printf("%d\n", r);
+  r = _sqrt_recursion(81);
+  printf("%d\n", r);
+  r = _sqrt_recursion(255);
+  printf("%d\n", r);
+  r = _sqrt_recursion(1000);
   printf("%d\n", r);
   return (0);
 }

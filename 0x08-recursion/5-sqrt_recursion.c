@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-int find_sqrt(int, int);
+unsigned long find_sqrt(unsigned long, unsigned long);
 /**
  *_sqrt_recursion - returns the natural square root of a number
  *@n: number
@@ -8,7 +8,7 @@ int find_sqrt(int, int);
  */
 int _sqrt_recursion(int n)
 {
-int y;
+long y;
 if (n < 0)
 return (-1);
 if (n == 1)
@@ -26,13 +26,16 @@ return (y);
  *@x: counter
  *Return: natural square root
  */
-int find_sqrt(int n, int x)
+unsigned long find_sqrt(unsigned long n, unsigned long x)
 {
-int y;
-if (x == n)
+unsigned long y;
+if (x >= n)
 return (1);
+if (n > 100000)
+y = find_sqrt(n, x + 100);
+else
 y = find_sqrt(n, x + 1);
-if (y *y == n)
+if ((y *y) == n)
 return (y);
 else
 return (y + 1);

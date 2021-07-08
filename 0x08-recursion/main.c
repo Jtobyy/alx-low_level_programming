@@ -54,17 +54,19 @@ int n;
   */
   int r;
 
-  r = _sqrt_recursion(161);
+  r = _sqrt_recursion(1);
   printf("%d\n", r);
-  r = _sqrt_recursion(144);
+  r = _sqrt_recursion(1024);
   printf("%d\n", r);
-  r = _sqrt_recursion(201);
+  r = _sqrt_recursion(16);
   printf("%d\n", r);
-  r = _sqrt_recursion(81);
+  r = _sqrt_recursion(17);
+  printf("%d\n", r); 
+
+  r = _sqrt_recursion(100000);
   printf("%d\n", r);
-  r = _sqrt_recursion(255);
+  r = _sqrt_recursion(16777216);
   printf("%d\n", r);
-  r = _sqrt_recursion(1000);
-  printf("%d\n", r);
+  
   return (0);
 }

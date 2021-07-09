@@ -547,10 +547,3 @@ int _putchar(char c)
 {
   return (write(1, &c, 1));
 }
-main.c/         0           0     0     644     125       `
-int main(void)
-{
-  _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-  return (0);
-}
-

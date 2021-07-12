@@ -12,9 +12,9 @@ int j;
 j = 0;
 while (j < argc)
 {
+printf("%s", argv[j]);
 j++;
-}
-printf("%d", j);
 putchar('\n');
+}
 return (0);
 }

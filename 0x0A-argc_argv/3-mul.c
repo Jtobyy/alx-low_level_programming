@@ -1,20 +1,20 @@
 #include "holberton.h"
-
+#include <stdlib.h>
 /**
- *main - prints the number of args passed into it
+ *main - prints product of two ints
  *@argc: numb of cmd line args
  *@argv: array of pointers containing cmd line ags
  *Return: int 0
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-int j;
-j = 0;
-while (j < argc)
+int r;
+if (argc != 3)
 {
-printf("%d", r);
-j++;
-putchar('\n');
+printf("Error\n");
+return (1);
 }
+r = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", r);
 return (0);
 }

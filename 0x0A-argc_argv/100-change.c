@@ -12,13 +12,26 @@ int calcent(int g);
 
 int main(int argc, char *argv[])
 {
+int j;
 int g;
 int c;
+char *p;
+j = 0;
 c = 0;
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
+}
+p = argv[1];
+while (*(p + j) != '\0')
+{
+if (*(p + 0) < 48 || *(p + 0) > 57)
+{
+printf("Error\n");
+return (1);
+}
+j++;
 }
 g = atoi(argv[1]);
 if (g < 0)

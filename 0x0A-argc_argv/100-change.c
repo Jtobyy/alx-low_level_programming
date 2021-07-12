@@ -23,6 +23,12 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
+g = atoi(argv[1]);
+if (g < 0)
+{
+printf("%d\n", 0);
+return (0);
+}
 p = argv[1];
 while (*(p + j) != '\0')
 {
@@ -33,9 +39,6 @@ return (1);
 }
 j++;
 }
-g = atoi(argv[1]);
-if (g < 0)
-printf("%d\n", 0);
 c = calcent(g);
 printf("%d\n", c);
 return (0);
@@ -50,7 +53,7 @@ int calcent(int g)
 {
 int c;
 c = 0;
-while (g != 0)
+while (g > 0)
 {
 if (g < 25)
 {
@@ -64,22 +67,32 @@ g -= 1;
 c++;
 continue;
 }
+else
+{
 g -= 2;
 c++;
 continue;
 }
+}
+else
+{
 g -= 5;
 c++;
 continue;
 }
+}
+else
+{
 g -= 10;
 c++;
 continue;
+}
 }
 else
 {
 g -= 25;
 c++;
+continue;
 }
 }
 return (c);

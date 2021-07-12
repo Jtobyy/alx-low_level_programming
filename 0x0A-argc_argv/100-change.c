@@ -26,7 +26,7 @@ return (1);
 p = argv[1];
 while (*(p + j) != '\0')
 {
-if (*(p + 0) < 48 || *(p + 0) > 57)
+if (*(p + j) < 48 || *(p + j) > 57)
 {
 printf("Error\n");
 return (1);

@@ -22,4 +22,5 @@ if (p != NULL)
 return (p);
 else
 return (NULL);
+free(p);
 }

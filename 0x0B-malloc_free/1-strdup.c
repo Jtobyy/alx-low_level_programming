@@ -3,22 +3,25 @@
 /**
  *_strdup - Returns a pointer to a newly allocated space in memory
  * which contains a copy of the string given as parameter
- *@str: size of array
- *Return: pointer to arry
+ *@str: string
+ *Return: pointer to array
  */
 char *_strdup(char *str)
 {
 unsigned int i;
+unsigned int j;
 char *p;
-p = malloc(sizeof(char) * size);
-for (i = 0; i < size; i++)
+j = 0;
+if (str == NULL)
+return (NULL);
+while (str[j] != 0)
+j++;
+p = malloc(sizeof(char) * (j + 1));
+if (p == NULL)
+return (NULL);
+for (i = 0; i < (j + 1); i++)
 {
-p[i] = c;
+p[i] = str[i];
 }
-if (p == 0)
-return (NULL);
-if (p)
 return (p);
-else
-return (NULL);
 }

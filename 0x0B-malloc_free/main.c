@@ -1,7 +1,6 @@
 #include "holberton.h"
 
-void print_grid(int **grid, int width, int height);
-int main(void)
+int main(int ac, char *av[])
 {
   /**  char *buffer;
 
@@ -38,7 +37,7 @@ int main(void)
   printf("%s\n", s);
   free(s);
   return (0);  */
-  int **grid;
+  /**  int **grid;
 
   grid = alloc_grid(6, 4);
   if (grid == NULL)
@@ -51,6 +50,16 @@ int main(void)
   grid[3][4] = 402;
   print_grid(grid, 6, 4);
   free_grid(grid, 4);
+  return (0); */
+  char *s;
+
+  s = argstostr(ac, av);
+  if (s == NULL)
+    {
+      return (1);
+    }
+  printf("%s", s);
+  free(s);
   return (0);
 }
 

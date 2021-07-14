@@ -25,7 +25,7 @@ for (j = 0; av[i][j] != '\0'; j++)
 k++;
 e++;
 }
-p = (char *)malloc(sizeof(char) * (k + e - 1));
+p = (char *)malloc(sizeof(char) * (k + e + 1));
 if (p == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)

@@ -6,14 +6,13 @@
  *@height: height of grid
  *Retrun: void
  */
-void free_grid(int **grid, int height)
+void free_grid(int **grid, int height __attribute__((unused)))
 {
 int i;
 free(grid);
 for (i = 0; i < height; i++)
 {
-     for (j = 0; j < i; j++)
-     free(p[i][j]);
-   }
+free(grid[i]);
+}
 return;
 }

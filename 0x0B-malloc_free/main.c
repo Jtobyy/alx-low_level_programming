@@ -1,7 +1,5 @@
 #include "holberton.h"
 
-void simple_print_buffer(char *, unsigned int);
-
 int main(void)
 {
   /**  char *buffer;
@@ -16,7 +14,7 @@ int main(void)
   free(buffer);
   return (0); */
 
-  char *s;
+  /**  char *s;
 
   s = _strdup("Holberton");
   if (s == NULL)
@@ -26,10 +24,22 @@ int main(void)
     }
   printf("%s\n", s);
   free(s);
-  return (0);
-  
+  return (0); */
+
+  char *s;
+
+  s = str_concat(NULL, "Holberton");
+  if (s == NULL)
+    {
+      printf("failed\n");
+      return (1);
+    }
+  printf("%s\n", s);
+  free(s);
+  return (0);  
 }
 
+/** 
 void simple_print_buffer(char *buffer, unsigned int size)
 {
   unsigned int i;
@@ -50,3 +60,4 @@ void simple_print_buffer(char *buffer, unsigned int size)
     }
   printf("\n");
 }
+*/

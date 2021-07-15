@@ -22,14 +22,14 @@ m = 0;
 q = 0;
 if (s1 == NULL)
 {
-s1 = malloc(sizeof *s1 * 1);
+s1 = malloc(sizeof(*s1) * 1);
 s1[0] = '\0';
 }
 if (s2 == NULL)
 {
-s2 = malloc(sizeof *s2 * 1);
+s2 = malloc(sizeof(*s2) * 1);
 s2[0] = '\0';
-}  
+}
 while (s1[i] != '\0')
 i++;
 while (s2[q] != '\0')
@@ -37,10 +37,10 @@ q++;
 if (n > q)
 n = q;
 t = i + n + 1;
-p = malloc(sizeof *p * t);
+p = malloc(sizeof(*p) * t);
 if (p == NULL)
 return (NULL);
-for (j = 0; j < i; j++) 
+for (j = 0; j < i; j++)
 {
 p[j] = s1[j];
 }

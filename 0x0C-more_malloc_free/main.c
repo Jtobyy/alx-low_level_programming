@@ -3,7 +3,7 @@
 
 int main(void)
 {
-  char *c;
+  /**  char *c;
   int *i;
   float *f;
   double *d;
@@ -20,5 +20,11 @@ int main(void)
   free(i);
   free(f);
   free(d);
+  return (0); */
+  char *concat;
+
+  concat = string_nconcat("Holberton ", "School !!!", 6);
+  printf("%s\n", concat);
+  free(concat);
   return (0);
 }

@@ -1,6 +1,7 @@
 #include "holberton.h"
 
 char *exfunc(char *p, char *, char *, int, int);
+
 /**
  *string_nconcat - concatenates two strings
  *@s1: string 1
@@ -11,8 +12,8 @@ char *exfunc(char *p, char *, char *, int, int);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int i;
-int t;
+unsigned int i;
+unsigned int t;
 unsigned int q;
 char *p;
 i = 0;
@@ -31,7 +32,7 @@ while (s1[i] != '\0')
 i++;
 while (s2[q] != '\0')
 q++;
-if (n > q)
+if (n >= q)
 n = q;
 t = i + n + 1;
 p = malloc(sizeof(*p) * t);

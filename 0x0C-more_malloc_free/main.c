@@ -23,7 +23,7 @@ int main(void)
   return (0); */
   char *concat;
 
-  concat = string_nconcat("Holberton ", "School !!!", 6);
+  concat = string_nconcat("Holberton ", NULL, 3);
   printf("%s\n", concat);
   free(concat);
   return (0);

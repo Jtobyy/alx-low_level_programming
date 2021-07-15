@@ -1,9 +1,10 @@
 #include "holberton.h"
 #include <limits.h>
+#include <string.h>
 
-int main(void)
+/** int main(void)
 {
-  /**  char *c;
+  char *c;
   int *i;
   float *f;
   double *d;
@@ -20,11 +21,44 @@ int main(void)
   free(i);
   free(f);
   free(d);
-  return (0); */
+  return (0); 
   char *concat;
 
   concat = string_nconcat("Holberton ", NULL, 3);
   printf("%s\n", concat);
   free(concat);
+  return (0);
+}*/
+void simple_print_buffer(char *buffer, unsigned int size)
+{
+  unsigned int i;
+
+  i = 0;
+  while (i < size)
+    {
+      if (i % 10)
+	{
+	  printf(" ");
+	}
+      if (!(i % 10) && i)
+	{
+	  printf("\n");
+	}
+      printf("0x%02x", buffer[i]);
+      i++;
+    }
+  printf("\n");
+}
+
+int main(void)
+{
+  char *a;
+
+  a = _calloc(98, sizeof(char));
+  strcpy(a, "Holberton");
+  strcpy(a + 9, " School! :)\n");
+  a[97] = '!';
+  simple_print_buffer(a, 98);
+  free(a);
   return (0);
 }

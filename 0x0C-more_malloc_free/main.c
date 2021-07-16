@@ -53,17 +53,18 @@ void simple_print_buffer(char *buffer, unsigned int size)
 int main(void)
 {
   int i;
-  char *a;
   int *b;
+  char *a;
+
   a = _calloc(98, sizeof(char));
   strcpy(a, "holberton");
   strcpy(a + 9, " School! :)\n");
   a[97] = '.';
   simple_print_buffer(a, 98);
   free(a);
-  b = _calloc(98, sizeof(int));
+  b = _calloc(98, sizeof(long));
   for (i = 0; i < 98; i++)
-    printf("0x%02x\n", b[i]);
+    printf("b[%i]: %d\n", i, b[i]);
   free(b);
   return (0);
 

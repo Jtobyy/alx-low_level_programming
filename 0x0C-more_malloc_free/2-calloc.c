@@ -16,7 +16,10 @@ return (NULL);
 p = malloc(nmemb * size);
 if (p == NULL)
 return (NULL);
-for (i = 0; i < nmemb; i++)
+printf("size of p is %d\n", nmemb * size);
+for (i = 0; i < (nmemb * size); i++)
+{
 *(p + i) = 0;
+}
 return ((void *)p);
 }

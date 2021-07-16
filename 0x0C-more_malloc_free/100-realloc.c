@@ -30,8 +30,16 @@ p = malloc(sizeof(*p) * new_size);
 if (p == NULL)
 return (NULL);
 q = (char *)ptr;
+if (new_size < old_size)
+{
 for (i = 0; i < new_size; i++)
 p[i] = q[i];
+}
+else
+{
+for (i = 0; i < old_size; i++)
+p[i] = q[i];
+}
 free(ptr);
 return ((void *)p);
 }

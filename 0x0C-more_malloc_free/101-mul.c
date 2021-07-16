@@ -1,8 +1,8 @@
 #include "holberton.h"
 
-int _pow10(int n);
-void add_zeros(int n, int p);
-void print_number(int n);
+unsigned long _pow10(unsigned long n);
+void add_zeros(unsigned long n, unsigned long p);
+void print_number(unsigned long n);
 
 /**
  *main - multiplies two different intergers
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 int i;
 int j;
-int m;
+unsigned long m;
 char *p;
 j = 0;
 if (argc != 3)
@@ -35,14 +35,6 @@ continue;
 p = argv[i];
 while (p[j] != '\0')
 {
-if (j == 0)
-{
-if (p[j] == '-')
-{
-j++;
-continue;
-}
-}
 if (p[j] < 48 || p[j] > 57)
 {
 putchar('E');
@@ -57,7 +49,7 @@ j++;
 }
 j = 0;
 }
-m = atoi(argv[1]) * atoi(argv[2]);
+m = atol(argv[1]) * atol(argv[2]);
 if (m == 0)
 putchar(0 + '0');
 else
@@ -72,20 +64,13 @@ return (0);
  *Return: void
  */
 
-void print_number(int n)
+void print_number(unsigned long n)
 {
-int quo;
-int i;
-int p;
+unsigned long quo;
+unsigned long i;
+unsigned long p;
 i = 0;
 quo = n;
-if (n < 0)
-{
-putchar('-');
-n = 0 - n;
-print_number(n);
-return;
-}
 while (quo >= 10)
 {
 quo = quo / 10;
@@ -98,9 +83,7 @@ add_zeros(n, p);
 if (n >= 10)
 print_number(n);
 else
-{
 putchar(n + '0');
-}
 return;
 }
 
@@ -109,10 +92,10 @@ return;
  *@n: value of power
  *Return: void
  */
-int _pow10(int n)
+unsigned long _pow10(unsigned long n)
 {
-int i;
-int tmp;
+unsigned long i;
+unsigned long tmp;
 tmp = 10;
 for (i = 1; i < n; i++)
 tmp *= 10;
@@ -126,9 +109,9 @@ return (tmp);
  *Return: void
  */
 
-void add_zeros(int n, int p)
+void add_zeros(unsigned long n, unsigned long p)
 {
-int i;
+unsigned long i;
 for (i = p / 10; i > 1 && n < i; i /= 10)
 {
 putchar(0 + '0');

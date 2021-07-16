@@ -2,9 +2,9 @@
 #include <limits.h>
 #include <string.h>
 
-int main(void)
+/**int main(void)
 {
-  /*  char *c;
+  char *c;
   int *i;
   float *f;
   double *d;
@@ -21,15 +21,15 @@ int main(void)
   free(i);
   free(f);
   free(d);
-  return (0); */
+  return (0); 
   char *concat;
 
   concat = string_nconcat("Hello ", "holla", 1);
   printf("%s\n", concat);
   free(concat);
   return (0);
-}
-/**void simple_print_buffer(char *buffer, unsigned int size)
+  }*/
+void simple_print_buffer(char *buffer, unsigned int size)
 {
   unsigned int i;
 
@@ -52,16 +52,22 @@ int main(void)
 
 int main(void)
 {
+  int i;
   char *a;
-
+  int *b;
   a = _calloc(98, sizeof(char));
-  strcpy(a, "Holberton");
+  strcpy(a, "holberton");
   strcpy(a + 9, " School! :)\n");
-  a[97] = '!';
+  a[97] = '.';
   simple_print_buffer(a, 98);
   free(a);
+  b = _calloc(98, sizeof(int));
+  for (i = 0; i < 98; i++)
+    printf("0x%02x\n", b[i]);
+  free(b);
   return (0);
-  }*/
+
+  }
 /**void simple_print_buffer(int *buffer, unsigned int size)
 {
   unsigned int i;

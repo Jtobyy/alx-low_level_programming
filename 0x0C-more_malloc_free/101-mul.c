@@ -1,5 +1,6 @@
 #include "holberton.h"
 
+char * mult_large(char *, char *, int, int);
 unsigned long _pow10(unsigned long n);
 void add_zeros(unsigned long n, unsigned long p);
 void print_number(unsigned long n);
@@ -13,11 +14,13 @@ void print_number(unsigned long n);
 
 int main(int argc, char *argv[])
 {
-int i;
 int j;
+int k;
 unsigned long m;
 char *p;
+char *endptr;
 j = 0;
+k = 0;
 if (argc != 3)
 {
 putchar('E');
@@ -28,11 +31,7 @@ putchar('r');
 putchar('\n');
 exit(98);
 }
-for (i = 0; i < argc; i++)
-{
-if (i == 0)
-continue;
-p = argv[i];
+p = argv[1];
 while (p[j] != '\0')
 {
 if (p[j] < 48 || p[j] > 57)
@@ -47,17 +46,54 @@ exit(98);
 }
 j++;
 }
-j = 0;
+p = argv[2];
+while (p[k] != '\0')
+{
+if (p[k] < 48 || p[k] > 57)
+{
+putchar('E');
+putchar('r');
+putchar('r');
+putchar('o');
+putchar('r');
+putchar('\n');
+exit(98);
 }
-m = atol(argv[1]) * atol(argv[2]);
+k++;
+}
+if (j + k >= 10)
+{
+mult_large(argv[1], argv[2], j, k);
+}
+else
+{
+m = strtol(argv[1], &endptr, 10) * strtol(argv[2], &endptr, 10);
 if (m == 0)
 putchar(0 + '0');
 else
 print_number(m);
 putchar('\n');
 return (0);
+   }
 }
 
+/**
+ *mutl - does the multiplication of large values
+ *@a: first number
+ *@b: second number
+ *Return: void
+ */
+
+char *mult_large(char *a, char *b, int c, int d)
+{
+int i;
+int j;
+char *p;
+for (i = 0; a[i] != 0; a++)
+{
+pass
+}
+}
 /**
  *print_number - prints an integer
  *@n: number to be printed
@@ -71,6 +107,8 @@ unsigned long i;
 unsigned long p;
 i = 0;
 quo = n;
+if (quo >= 10)
+{
 while (quo >= 10)
 {
 quo = quo / 10;
@@ -85,6 +123,12 @@ print_number(n);
 else
 putchar(n + '0');
 return;
+}
+else
+{
+putchar(n + '0');
+return;
+}
 }
 
 /**

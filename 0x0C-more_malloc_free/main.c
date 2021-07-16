@@ -52,8 +52,6 @@ void simple_print_buffer(char *buffer, unsigned int size)
 
 int main(void)
 {
-  int i;
-  int *b;
   char *a;
 
   a = _calloc(98, sizeof(char));
@@ -62,10 +60,6 @@ int main(void)
   a[97] = '.';
   simple_print_buffer(a, 98);
   free(a);
-  b = _calloc(98, sizeof(long));
-  for (i = 0; i < 98; i++)
-    printf("b[%i]: %d\n", i, b[i]);
-  free(b);
   return (0);
 
   }

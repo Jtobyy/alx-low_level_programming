@@ -29,7 +29,7 @@
   free(concat);
   return (0);
   }*/
-void simple_print_buffer(char *buffer, unsigned int size)
+/** void simple_print_buffer(char *buffer, unsigned int size)
 {
   unsigned int i;
 
@@ -62,8 +62,8 @@ int main(void)
   free(a);
   return (0);
 
-  }
-/**void simple_print_buffer(int *buffer, unsigned int size)
+  }*/
+void simple_print_buffer(char *buffer, unsigned int size)
 {
   unsigned int i;
 
@@ -78,24 +78,24 @@ int main(void)
 	{
 	  printf("\n");
 	}
-      printf("%d", buffer[i]);
+      printf("0x%02x", buffer[i]);
       i++;
     }
   printf("\n");
 }
 int main(void)
 {
-  int *a;
+  char *p;
+  int i;
 
-  a = array_range(0, 0);
-    if(a == NULL)
+  p = malloc(sizeof(char) * 10);
+  p = _realloc(p, sizeof(char) * 10, sizeof(char) * 98);
+  i = 0;
+  while (i < 98)
     {
-      printf("null\n");
+      p[i++] = 98;
     }
-
-  simple_print_buffer(a, 1);
-    
-
-  free(a);
+  simple_print_buffer(p, 98);
+  free(p);
   return (0);
-}*/
+}

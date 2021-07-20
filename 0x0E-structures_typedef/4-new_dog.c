@@ -32,17 +32,32 @@ while (name[i] != '\0')
 i++;
 n_n = malloc(sizeof(*n_n) * (i + 1));
 if (n_n == NULL)
+{
+free(name);
+free(owner);
 return (NULL);
+}
 n_n = copy_(n_n, name);
 while (owner[k] != '\0')
 k++;
 n_o = malloc(sizeof(*n_o) * (k + 1));
 if (n_o == NULL)
+{
+free(name);
+free(owner);
+free(n_n);
 return (NULL);
+}
 n_o = copy_(n_o, owner);
 n_d = malloc(sizeof(dog_t));
 if (n_d == NULL)
+{
+free(name);
+free(owner);
+free(n_n);
+free(n_o);
 return (NULL);
+}
 n_d->name = n_n;
 n_d->age = age;
 n_d->owner = n_o;

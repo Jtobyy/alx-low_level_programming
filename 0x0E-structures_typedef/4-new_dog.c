@@ -15,6 +15,16 @@ int k;
 char *n_n;
 char *n_o;
 dog_t *n_d;
+if (name == NULL)
+{
+name = malloc(sizeof(char) * 1);
+name[0] = '\0';
+}
+if (owner == NULL)
+{
+owner = malloc(sizeof(char) * 1);
+owner[0] = '\0';
+}
 i = 0;
 k = 0;
 while (name[i] != '\0')

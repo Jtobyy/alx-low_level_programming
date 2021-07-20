@@ -60,5 +60,6 @@ char *copy_(char *to, char *from)
 int j;
 for (j = 0; from[j] != '\0'; j++)
 to[j] = from[j];
+to[j] = '\0';
 return (to);
 }

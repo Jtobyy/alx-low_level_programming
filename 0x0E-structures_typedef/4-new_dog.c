@@ -30,13 +30,13 @@ i = 0;
 k = 0;
 while (name[i] != '\0')
 i++;
-n_n = malloc(sizeof(*n_n) * i);
+n_n = malloc(sizeof(*n_n) * (i + 1));
 if (n_n == NULL)
 return (NULL);
 n_n = copy_(n_n, name);
 while (owner[k] != '\0')
 k++;
-n_o = malloc(sizeof(*n_o) * k);
+n_o = malloc(sizeof(*n_o) * (k + 1));
 if (n_o == NULL)
 return (NULL);
 n_o = copy_(n_o, owner);

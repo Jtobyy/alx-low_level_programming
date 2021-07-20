@@ -1,5 +1,7 @@
 #include "dog.h"
 
+char *copy_(char *to, char *from);
+
 /**
  *new_dog - creates a new dog
  *@name: name of dog
@@ -10,7 +12,6 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 int i;
-int j;
 int k;
 char *n_n;
 char *n_o;
@@ -32,17 +33,13 @@ i++;
 n_n = malloc(sizeof(*n_n) * (i + 1));
 if (n_n == NULL)
 return (NULL);
-for (j = 0; j < i; j++)
-n_n[j] = name[j];
-n_n[j] = '\0';
+n_n = copy_(n_n, name);
 while (owner[k] != '\0')
 k++;
 n_o = malloc(sizeof(*n_o) * (k + 1));
 if (n_o == NULL)
 return (NULL);
-for (j = 0; j < i; j++)
-n_o[j] = name[j];
-n_o[j] = '\0';
+n_o = copy_(n_o, owner);
 n_d = malloc(sizeof(dog_t));
 if (n_d == NULL)
 return (NULL);
@@ -50,4 +47,19 @@ n_d->name = n_n;
 n_d->age = age;
 n_d->owner = n_o;
 return (n_d);
+}
+
+/**
+ *copy_ - copy's characters from one memory to another
+ *@to: destination
+ *@from: source
+ *Return: pointer to "to"
+ */
+char *copy_(char *to, char *from)
+{
+int j;
+for (j = 0; from[j] != '\0'; j++)
+to[j] = from[j];
+to[j] = '\0';
+return (to);
 }

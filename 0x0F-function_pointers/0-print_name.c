@@ -7,6 +7,16 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
+if (name == NULL)
+{
+name = malloc(sizeof(*name));
+name[0] = '\0';
+}
+if (f == NULL)
+{
+free(name);
+return;
+}
 (*f)(name);
 return;
 }

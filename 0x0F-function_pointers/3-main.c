@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 int v1;
 int v2;
 int ans;
+char *p;
 int (*fp)(int, int);
 if (argc != 4)
 {
@@ -24,7 +25,14 @@ exit(98);
 }
 v1 = atoi(argv[1]);
 v2 = atoi(argv[3]);
-fp = get_op_func(argv[2]);
+p = argv[2];
+if (p[1] != '\0')
+{
+printf("Error\n");
+exit(99);
+return (0);
+}
+fp = get_op_func(p);
 if (fp == NULL)
 {
 putchar('E');

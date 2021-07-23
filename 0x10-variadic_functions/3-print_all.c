@@ -37,8 +37,7 @@ break;
 printf("%s", p);
 break;
 default:
-j++;
-continue;
+break;
 }
 if ((format[j] == 'c' || format[j] == 'i'
 || format[j] == 'f' || format[j] == 's') && format[j + 1] != '\0')

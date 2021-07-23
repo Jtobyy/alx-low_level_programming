@@ -12,6 +12,8 @@ int j;
 char *p;
 j = 0;
 va_start(ap, format);
+while (format == NULL)
+return;
 while (format[j] != '\0')
 {
 switch (format[j])
@@ -34,9 +36,12 @@ break;
 }
 printf("%s", p);
 break;
+default:
+j++;
+continue;
 }
 if ((format[j] == 'c' || format[j] == 'i'
-|| format[j] == 'f' || format[j] == 's') && format[j + 1] != 0)
+|| format[j] == 'f' || format[j] == 's') && format[j + 1] != '\0')
 printf(", ");
 j++;
 }

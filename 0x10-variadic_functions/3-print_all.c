@@ -13,7 +13,10 @@ char *p;
 j = 0;
 va_start(ap, format);
 while (format == NULL)
+{
+printf("(nil)\n");
 return;
+}
 while (format[j] != '\0')
 {
 switch (format[j])

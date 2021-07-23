@@ -12,8 +12,6 @@ int j;
 char *p;
 j = 0;
 va_start(ap, format);
-while (format == NULL)
-return;
 while (format[j] != '\0')
 {
 switch (format[j])

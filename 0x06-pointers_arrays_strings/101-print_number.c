@@ -14,7 +14,12 @@ void print_number(int n)
 int quo;
 int i;
 int p;
+<<<<<<< HEAD
+
+
+=======
  
+>>>>>>> a4b7bdaf0f798dc03a7516066ce74bfa0f9e29e5
 i = 0;
 quo = n;
 if (n < 0)

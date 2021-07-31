@@ -36,7 +36,7 @@ printf("%s", p);
 break;
 }
 if ((format[j] == 'c' || format[j] == 'i'
-|| format[j] == 'f' || format[j] == 's') && format[j + 1] != 0)
+|| format[j] == 'f' || format[j] == 's') && format[j + 1] != '\0')
 printf(", ");
 j++;
 }

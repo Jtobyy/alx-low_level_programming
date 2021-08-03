@@ -16,9 +16,7 @@ p = h;
 while (p != NULL)
 {
 if (p->str == NULL)
-{
 printf("[0] (nil)\n");
-}
 else
 {
 printf("[%u] ", p->len);

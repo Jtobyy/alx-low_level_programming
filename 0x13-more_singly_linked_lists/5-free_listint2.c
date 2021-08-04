@@ -15,6 +15,5 @@ while (*head != NULL)
 free(lp);
 lp = *head;
 }
-*head = NULL;
 return;
 }

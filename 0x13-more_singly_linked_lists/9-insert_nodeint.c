@@ -15,6 +15,16 @@ listint_t *np;
 if (*head == NULL)
 return (NULL);
 lp = *head;
+if (idx == 0)
+{
+np = malloc(sizeof(*np) * 1);
+if (np == NULL)
+return (NULL);
+np->n = n;
+np->next = lp;
+*head = np;
+return (np);
+}
 for (i = 0; i < (idx - 1); i++)
 {
 lp = lp->next;
@@ -29,7 +39,7 @@ return (NULL);
 np->n = n;
 np->next = lp->next;
 lp->next = np;
-return (lp);
+return (np);
 }
 else
 return (NULL);

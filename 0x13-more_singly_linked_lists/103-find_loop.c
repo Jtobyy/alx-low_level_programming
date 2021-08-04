@@ -6,7 +6,7 @@
  *@head: head of list
  *Return: address of node wher loop starts
  */
-listint_t *find_listint_loop(listint_t *head)
+listint_t *find_listint_loop(listint_t *head __attribute__((unused)))
 {
 return (NULL);
 }

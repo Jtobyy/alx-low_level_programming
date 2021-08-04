@@ -5,16 +5,13 @@
  *@h: list header
  *Return: number of elments in list
  */
-size_t print_listint(const listint_t *h)
+   size_t print_listint(const listint_t *h)
 {
 size_t i;
 const listint_t *p;
 i = 0;
 if (h == NULL)
-{
-printf("(nil)\n");
 return (0);
-}
 p = h;
 while (p != NULL)
 {

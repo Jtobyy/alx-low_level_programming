@@ -34,6 +34,8 @@ if (i == index)
 tmp = lp->next;
 tmp2->next = tmp;
 free(lp);
-}
 return (1);
+}
+else
+return (-1);
 }

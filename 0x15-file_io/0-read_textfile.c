@@ -8,5 +8,22 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+ssize_t f;
+ssize_t n;
+ssize_t w;
+char *p;
+if (filename == NULL)
 return (0);
+f = open(filename, O_RDONLY);
+if (f == -1)
+return (0);
+p = malloc(sizeof(*p) * letters);
+if (p == NULL)
+return (0);
+n = read(f, p, letters);
+close(f);
+w = write(STDOUT_FILENO, p, n);
+if (w != n)
+return (0);
+return (w);
 }

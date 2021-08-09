@@ -24,6 +24,10 @@ n = read(f, p, letters);
 close(f);
 w = write(STDOUT_FILENO, p, n);
 if (w != n)
+{
+free(p);
 return (0);
+}
+free(p);
 return (w);
 }

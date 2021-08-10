@@ -14,10 +14,7 @@ i = 0;
 if (filename == NULL)
 return (-1);
 if (text_content == NULL)
-{
-text_content = malloc(sizeof(*text_content));
-text_content[0] = '\0';
-}
+return (1);
 f = open(filename, O_WRONLY | O_APPEND);
 if (f == -1)
 return (-1);

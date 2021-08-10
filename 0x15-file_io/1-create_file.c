@@ -13,12 +13,14 @@ int i;
 i = 0;
 if (filename == NULL)
 return (-1);
-f = open(filename, O_CREAT | O_RDWR, 0600);
+f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (f == -1)
 return (-1);
 if (text_content == NULL)
 {
 text_content = malloc(sizeof(*text_content) * 1);
+if (text_content == NULL)
+return (-1);
 text_content[0] = '\0';
 }
 while (text_content[i] != '\0')

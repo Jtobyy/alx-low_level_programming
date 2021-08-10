@@ -25,7 +25,7 @@ text_content[0] = '\0';
 }
 while (text_content[i] != '\0')
 i++;
-write(f, text_content, (i + 1));
+write(f, text_content, i);
 close(f);
 if (i == 0)
 free(text_content);

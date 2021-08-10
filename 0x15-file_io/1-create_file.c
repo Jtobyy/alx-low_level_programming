@@ -11,8 +11,7 @@ int create_file(const char *filename, char *text_content)
 int f;
 int i;
 i = 0;
-if (filename[0] == 'N' && filename[1] == 'U'
-&& filename[2] == 'L' && filename[3] == 'L')
+if (filename == NULL)
 return (-1);
 f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (f == -1)
@@ -26,7 +25,9 @@ text_content[0] = '\0';
 }
 while (text_content[i] != '\0')
 i++;
-write(f, text_content, i + 1);
+write(f, text_content, (i + 1));
 close(f);
+if (i == 1)
+free(text_content);
 return (1);
 }

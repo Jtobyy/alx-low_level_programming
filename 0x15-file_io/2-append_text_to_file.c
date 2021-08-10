@@ -23,7 +23,6 @@ if (f == -1)
 return (-1);
 while (text_content[i] != '\0')
 i++;
-if (i != 0)
 write(f, text_content, (i + 1));
 return (1);
 }

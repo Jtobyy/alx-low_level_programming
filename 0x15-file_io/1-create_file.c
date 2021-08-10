@@ -10,6 +10,8 @@ int create_file(const char *filename, char *text_content)
 {
 int f;
 int i;
+int w;
+int c;
 i = 0;
 if (filename == NULL)
 return (-1);
@@ -25,9 +27,13 @@ text_content[0] = '\0';
 }
 while (text_content[i] != '\0')
 i++;
-write(f, text_content, (i + 1));
-close(f);
-if (i == 1)
+w = write(f, text_content, (i + 1));
+if (w == -1)
+return (-1);
+c = close(f);
+if (c = -1)
+return (-1);
+if (i == 0)
 free(text_content);
 return (1);
 }

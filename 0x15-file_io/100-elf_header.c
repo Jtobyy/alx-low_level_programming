@@ -14,25 +14,28 @@ void det_type(int);
 int main(int argc, char *argv[])
 {
 int p;
-int r;
 char buf[28];
-char *titles[] = {"ELF Header:", "Magic:", "Class:", "Data:", "Version:", "OS/ABI:", "ABI Version:", "Type:", "Entry point address:"};
+char *titles[] = {"ELF Header:", "Magic:", "Class:", "Data:", "Version:",
+		  "OS/ABI:", "ABI Version:", "Type:", "Entry point address:"};
 if (argc != 2)
 {
 dprintf(STDERR_FILENO, "Usage: ./elfheader file_name\n");
 exit(98);
 }
 p = open(argv[1], O_RDONLY);
-r = read(p, buf, 28);
+read(p, buf, 28);
 close(p);
 if (buf[0] != 0x7f || buf[1] != 'E' || buf[2] != 'L' || buf[3] != 'F')
 {
-dprintf(STDERR_FILENO, "File given is not an Executable and Linkable Format(ELF) file.\n");
+dprintf(STDERR_FILENO, "File given is not an Executable");
+dprintf(STDERR_FILENO, "and Linkable Format(ELF) file.\n");
 exit(98);
 }
-printf("%s\n  %s   %.2x %.2x %.2x %.2x %.2x", titles[0], titles[1], buf[0], buf[1], buf[2], buf[3], buf[4]);
+printf("%s\n  %s   %.2x %.2x %.2x %.2x %.2x", titles[0],
+titles[1], buf[0], buf[1], buf[2], buf[3], buf[4]);
 printf(" %.2x %.2x %.2x %.2x %.2x", buf[5], buf[6], buf[7], buf[8], buf[9]);
-printf(" %.2x %.2x %.2x %.2x %.2x %.2x\n", buf[10], buf[11], buf[12], buf[13], buf[14], buf[15]);
+printf(" %.2x %.2x %.2x %.2x %.2x %.2x\n", buf[10], buf[11],
+buf[12], buf[13], buf[14], buf[15]);
 printf("  %s", titles[2]);
 if (buf[4] == 1)
 printf("%29sELF32\n", "");
@@ -71,7 +74,10 @@ void det_abi(int hex)
 {
 int i;
 int value[] = {0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18};
-char *ABI[] = {"Unix - System V", "HP-UX", "NetBSD", "Linux", "GNU Hurd", "Solaris", "AIX", "IRIX", "FreeBSD", "Tru64", "Novell Modesto", "OpenBSD", "OpenVMS", "NonStop Kernel", "AROS", "Fenix OS", "CloudABI", "Stratus Technologies OpenVOS"};
+char *ABI[] = {"Unix - System V", "HP-UX", "NetBSD", "Linux", "GNU Hurd",
+	       "Solaris", "AIX", "IRIX", "FreeBSD", "Tru64", "Novell Modesto",
+	       "OpenBSD", "OpenVMS", "NonStop Kernel", "AROS",
+	       "Fenix OS", "CloudABI", "Stratus Technologies OpenVOS"};
 for (i = 0; i < 19; i++)
 {
 if (value[i] == hex)
@@ -93,7 +99,8 @@ void det_type(int hex)
 {
 int i;
 int value[] = {0, 1, 2, 3, 4};
-char *types[] = {"NONE", "REL (Relocatable file)", "EXEC (Executable file)", "DYN (Shared object file)"};
+char *types[] = {"NONE", "REL (Relocatable file)",
+		 "EXEC (Executable file)", "DYN (Shared object file)"};
 for (i = 0; i < 5; i++)
 {
 if (value[i] == hex)

@@ -1,5 +1,7 @@
 #include "lists.h"
 
+size_t dlistint_len7(const dlistint_t *h);
+
 /**
  *delete_dnodeint_at_index - deletes the node at index
  *index of a listint_t linked list.
@@ -27,7 +29,7 @@ for (i = 0; i < index; i++)
 tmp2 = lp;
 lp = lp->next;
 }
-if (index == dlistint_len(*head) - 1)
+if (index == dlistint_len7(*head) - 1)
 {
 tmp2->next = NULL;
 free(lp);
@@ -43,4 +45,26 @@ return (1);
 }
 else
 return (-1);
+}
+
+
+/**
+ *dlistint_len7 - returns the length of a list
+ *@h: list
+ *Return: no of elements in list
+ */
+size_t dlistint_len7(const dlistint_t *h)
+{
+size_t i;
+const dlistint_t *p;
+i = 0;
+if (h == NULL)
+return (0);
+p = h;
+while (p != NULL)
+{
+i++;
+p = p->next;
+}
+return (i);
 }

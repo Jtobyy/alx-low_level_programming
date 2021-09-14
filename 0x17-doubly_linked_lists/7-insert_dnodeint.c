@@ -1,5 +1,7 @@
 #include "lists.h"
 
+size_t dlistint_len7(const dlistint_t *h);
+
 /**
  *insert_dnodeint_at_index - inserts a new node at a  given position
  *@idx: idex of the list where the new node should be added.(index from 0)
@@ -20,12 +22,12 @@ if (idx == 0)
 np = add_dnodeint(h, n);
 return (np);
 }
-else if (idx == dlistint_len(*h))
+else if (idx == dlistint_len7(*h))
 {
 np = add_dnodeint_end(h, n);
 return (np);
 }
-for (i = 0; i < (idx - 1) && i <= dlistint_len(*h); i++)
+for (i = 0; i < (idx - 1) && i <= dlistint_len7(*h); i++)
 {
 lp = lp->next;
 if (lp == NULL)
@@ -44,4 +46,26 @@ lp->next = np;
 return (np);
 }
 return (NULL);
+}
+
+
+/**
+ *dlistint_len7 - returns the length of a list
+ *@h: list
+ *Return: no of elements in list
+ */
+size_t dlistint_len7(const dlistint_t *h)
+{
+size_t i;
+const dlistint_t *p;
+i = 0;
+if (h == NULL)
+return (0);
+p = h;
+while (p != NULL)
+{
+i++;
+p = p->next;
+}
+return (i);
 }

@@ -26,10 +26,14 @@ for (i = 0; i < index; i++)
 {
 tmp2 = lp;
 lp = lp->next;
-if (lp == NULL)
-break;
 }
-if (i == index)
+if (index == dlistint_len(*head) - 1)
+{
+tmp2->next = NULL;
+free(lp);
+return (1);
+}
+else if (i == index)
 {
 tmp = lp->next;
 tmp->prev = tmp2;

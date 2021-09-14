@@ -17,17 +17,15 @@ return (NULL);
 lp = *h;
 if (idx == 0)
 {
-np = malloc(sizeof(*np));
-if (np == NULL)
-return (NULL);
-lp->prev = np;
-np->n = n;
-np->next = lp;
-np->prev = NULL;
-*h = np;
+np = add_dnodeint(h, n);
 return (np);
 }
-for (i = 0; i < (idx - 1); i++)
+else if (idx == dlistint_len(*h))
+{
+np = add_dnodeint_end(h, n);
+return (np);
+}
+for (i = 0; i < (idx - 1) && i <= dlistint_len(*h); i++)
 {
 lp = lp->next;
 if (lp == NULL)
@@ -45,6 +43,5 @@ np->prev = lp;
 lp->next = np;
 return (np);
 }
-else
 return (NULL);
 }

@@ -15,7 +15,7 @@ return (0);
 p = h;
 while (p != NULL)
 {
-printf("%u\n", p->n);
+printf("%d\n", p->n);
 i++;
 p = p->next;
 }

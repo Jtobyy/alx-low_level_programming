@@ -1,8 +1,11 @@
 CC = gcc
-SRC = *.c
-OBJ = *.o
+SRC = main.c school.c
+OBJ = main.o school.o
 NAME = school
-all: $(OBJ)
-	$(CC) $(SRC) -o school
+all: $(OBJ) clean
+	$(CC) $(OBJ) -o school
 $(OBJ):
-	
+	$(CC) main.c -o main.o
+	$(CC) school.c -o school.o
+clean:
+	rm main.o school.o

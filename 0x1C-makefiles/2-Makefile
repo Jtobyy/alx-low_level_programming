@@ -7,4 +7,4 @@ all: $(OBJ) clean
 $(OBJ): $(SRC)
 
 clean:
-	rm main.o school.o
+	rm $(OBJ)

@@ -9,15 +9,15 @@ def island_perimeter(grid):
     """
     island = []
     width = len(grid[0])
-    height = 0;
+    height = len(grid);
     for i in grid:
-        height += 1
         edge = []
         for j in i:
             if j == 1:
                 edge.append(1)
         if len(edge) != 0:
             island.append(edge)
+
     for ls in island:
         i = 0
         while i < height:
@@ -28,6 +28,3 @@ def island_perimeter(grid):
                 break;
             i += 1;
         print()
-
-        
-

@@ -30,9 +30,9 @@ int binary_search(int *array, size_t size, int value)
 		for (j = L; j < R + 1; j++)
 		{
 			if (j == R)
-				printf("%d\n", j);
+				printf("%d\n", array[j]);
 			else
-				printf("%d, ", j);
+				printf("%d, ", array[j]);
 		}
 		cur = (L + R) / 2;
 		if (array[cur] == value)
